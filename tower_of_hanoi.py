@@ -127,7 +127,7 @@ def move_ring(PP,QQ):
     turtle.update()
     return
 
-#move rings in X to Z
+
 def tower_of_hanoi(X,Y,Z,n):
     if n == 1:
         move_ring(X,Z)
