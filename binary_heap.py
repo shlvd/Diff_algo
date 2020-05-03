@@ -39,13 +39,9 @@ class MinHeap:
         return self.size() == 0
 
     def _perc_up(self, pos):
-        while pos > 0:
-            if self._list[pos] < self._list[pos - 1]:
-                self._list[pos], self._list[pos - 1] = self._list[pos - 1], self._list[pos]
-            pos = pos - 1
-        #while pos // 2 > 0:
-            #if self._list[pos] < self._list[pos // 2]:
-                #(self._list[pos], self._list[pos // 2]) = (self._list[pos // 2], self._list[pos])
+        while pos // 2 > 0:
+            if self._list[pos] < self._list[pos // 2]:
+                (self._list[pos], self._list[pos // 2]) = (self._list[pos // 2], self._list[pos])
 
             #pos = pos // 2
 
