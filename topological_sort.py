@@ -178,7 +178,7 @@ class Graph:
         :return: List of vertices of the graph.
         """
         vertices = self._vertices.keys()
-        vertices.sort()
+        vertices = sorted(vertices)
         return vertices
 
     def get_edges(self):
